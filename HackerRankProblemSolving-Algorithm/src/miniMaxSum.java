@@ -1,7 +1,8 @@
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution {
+public class miniMaxSum {
 
     // Complete the miniMaxSum function below.
     static void miniMaxSum(int[] arr) {
@@ -36,4 +37,5 @@ public class Solution {
         scanner.close();
     }
 }
+
 
