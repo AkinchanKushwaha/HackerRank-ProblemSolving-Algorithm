@@ -13,13 +13,13 @@ public class JumpingTheClouds {
     static int jumpingOnClouds(int[] c) {
     	int count = 0;
     	int i = 0;
-    	while( i<c.length) {
-    		if(c[i+1] != 1) {
-    			count++;
-    			i+=2;
-    		}else if(c[i] != 1) {
-    			count++;
+    	while( i<c.length-1) {
+    		if(i+2==c.length ||c[i+2] == 1) {
     			i++;
+    			count++;
+    		}else  {
+    			i +=2 ;
+    			count++;
     		}
     	}
     	return count;
