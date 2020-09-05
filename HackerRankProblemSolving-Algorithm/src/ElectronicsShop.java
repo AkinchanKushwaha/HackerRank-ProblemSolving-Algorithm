@@ -16,7 +16,7 @@ public class ElectronicsShop {
     	int m  = drives.length ;
     	int max = -1;
     	int result = 0;
-    	// O(n^m)
+    	// O(n*m)
     	for(int i = 0 ; i<n ; i++) {
     		for(int j = 0 ; j< m ; j++) {
     			int sum = keyboards[i] +drives[j];
