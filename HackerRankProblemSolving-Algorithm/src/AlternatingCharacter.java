@@ -6,10 +6,11 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class BeautifulTriplets {
+public class AlternatingCharacter {
 
     // Complete the alternatingCharacters function below.
     static int alternatingCharacters(String s) {
+
     	int count = 0;
     	for(int i = 0 ; i<s.length()-1; i++) {
     		if(s.charAt(i) == s.charAt(i+1)) {
@@ -17,6 +18,8 @@ public class BeautifulTriplets {
     		}
     	}
     	return count;
+    
+
     }
 
     private static final Scanner scanner = new Scanner(System.in);
