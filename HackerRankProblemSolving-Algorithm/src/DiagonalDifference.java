@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-class Result {
+class Result1 {
 
     /*
      * Complete the 'diagonalDifference' function below.
@@ -61,7 +61,7 @@ public class DiagonalDifference {
             }
         });
 
-        int result = Result.diagonalDifference(arr);
+        int result = Result1.diagonalDifference(arr);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
