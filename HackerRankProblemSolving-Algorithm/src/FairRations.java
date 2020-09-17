@@ -27,9 +27,9 @@ public class FairRations {
             }
         }  
         
-//        if(B[0]%2 != 0) {
-//            count +=2;
-//        }
+        if(B[0]%2 != 0) {
+            count +=2;
+        }
  
         return count;
 
