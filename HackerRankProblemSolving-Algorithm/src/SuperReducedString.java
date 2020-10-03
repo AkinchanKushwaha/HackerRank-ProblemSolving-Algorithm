@@ -9,36 +9,29 @@ public class SuperReducedString {
 
     // Complete the superReducedString function below.
     static String superReducedString(String s) {
-        
         String ans = "";
         Stack<Character> st = new Stack<>();
         
         for(int i= 0 ; i<s.length(); i++) {
-            if(st.isEmpty()) {
-                st.push(s.charAt(i));
-            }
-            else if(st.peek() == s.charAt(i)) {
-                st.pop();
-            }else st.push(s.charAt(i));
+        	if(st.isEmpty()) {
+        		st.push(s.charAt(i));
+        	}
+        	else if(st.peek() == s.charAt(i)) {
+        		st.pop();
+        	}else st.push(s.charAt(i));
         }
         if(st.isEmpty()) {
-            return "Empty String";
+        	return "Empty String";
         }
         
         while(!st.isEmpty()) {
-            ans += st.peek();
-            st.pop();
+        	ans = st.peek()+ans;
+        	st.pop();
         }
-        StringBuffer sbf = new StringBuffer(ans);
-        sbf.reverse();
-        
-        ans = sbf.toString();
-        
       
         return ans;
-
-
-}
+        
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
