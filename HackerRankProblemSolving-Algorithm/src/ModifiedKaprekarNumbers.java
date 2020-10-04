@@ -21,7 +21,8 @@ public class ModifiedKaprekarNumbers {
 	    		}
 			}
     	}
-    	if(!isKaprekar) System.out.print("INVALID RANGE");
+    	if(!isKaprekar) 
+    		System.out.print("INVALID RANGE");
 
     }
 
