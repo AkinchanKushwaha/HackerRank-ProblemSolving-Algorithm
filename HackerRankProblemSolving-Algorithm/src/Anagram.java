@@ -16,10 +16,10 @@ public class Anagram {
     	}
     	int [] ch = new int[26];
     	Arrays.fill(ch,0);
-    	String a = s.substring(0, s.length()/2);
-    	String b = s.substring(s.length()/2, s.length());
+    	String a = s.substring(0, n);
+    	String b = s.substring(n, s.length());
     	
-    	for(int i = 0 ; i<ch.length ; i++) {
+    	for(int i = 0 ; i<a.length() ; i++) {
     		ch[a.charAt(i)-'a']++;
     	}
     	
